@@ -7,7 +7,7 @@ function useMiPropioHooks(value) {
 function LabHooks(props) {
   /* useState solo acepta un argumento, el valor default */
   let [foo, setFoo] = useState('bazinga');
-  /* De efecto */
+  /* De efecto, ciclo de vida */
   let bar = 'Dubidú';
   /* propios */
   let tal = useMiPropioHooks(foo);

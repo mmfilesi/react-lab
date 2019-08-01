@@ -14,8 +14,6 @@ import LabHierarchy from './components/lab-hierarchy/lab-hierarchy';
 import LabDucks from './components/lab-ducks/lab-ducks';
 import LabHooks from './components/lab-hooks/lab-hooks';
 import LabContext from './components/lab-context/lab-context';
-import LabReduxHooks from './components/lab-redux-hooks/lab-redux-hooks';
-
 
 class App extends React.Component {
   
@@ -31,16 +29,14 @@ class App extends React.Component {
               <li><Link to="/counter">Counter</Link></li>
               <li><Link to="/ducks">Ducks</Link></li>
               <li><Link to="/hooks">Hooks</Link></li>
-              <li><Link to="/context">LabContext</Link></li> 
-              <li><Link to="/redux-hooks">LabReduxHooks</Link></li>              
+              <li><Link to="/context">LabContext</Link></li>             
             </ul>
             <Route path="/" exact component={LabHome} />          
             <Route path="/hierarchy" component={LabHierarchy} />
             <Route path="/counter" component={LabCounter} />
             <Route path="/ducks" component={LabDucks} />
             <Route path="/hooks" component={LabHooks} />
-            <Route path="/context" component={LabContext}></Route>
-            <Route path="/redux-hooks" component={LabReduxHooks}></Route>                       
+            <Route path="/context" component={LabContext}></Route>                      
           </Router>
         </div>
       </Provider>

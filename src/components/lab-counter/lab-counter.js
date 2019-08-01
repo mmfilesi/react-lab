@@ -10,31 +10,16 @@ class LabCounter extends React.Component {
   constructor(props) {
     super(props);
     console.log(store.getState())
-    /*
-    this.state = {
-      count: 0
-    }
-    */
-
     this.addCount = this.addCount.bind(this);
     this.substractCount = this.substractCount.bind(this);
   }
 
   addCount() {
     this.props.addCount(1);
-    /*
-    const value = this.state.count + 1;
-    this.setState({count: value});
-    */
   }
 
   substractCount() {
     this.props.substractCount(1);
-
-    /*
-    const value = this.state.count - 1;
-    this.setState({count: value});
-    */
   }
   
   render() {
@@ -61,5 +46,4 @@ function mapStateToProps(state) {
   };
 }
 
-// export default LabCounter;
 export default connect(mapStateToProps, mapDispatchToProps)(LabCounter);
